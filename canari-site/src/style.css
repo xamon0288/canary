@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
+@import "./styles/about.css";
+@import "./styles/menu.css";
+@import "./styles/modal.css";
+@import "./styles/footer.css";
+@import "./styles/hero.css";
+@import "./styles/navbar.css";
+@import "./styles/gallery.css";
+
+:root {
+	/* COLORS */
+	--primary-color: #321c07;
+	--primary-color-light: #321c07a0;
+	--primary-color-light-2: #321c07c3;
+	--secondary-color: #8d7a74;
+	--highlight-color: #f2cb25;
+	--default-color: #fff;
+	/* FONTS */
+	--primary-font-family: "Raleway", sans-serif;
+	--secondary-font-family: "Caveat", cursive;
+
+	/* TYPOGRAPHY */
+	/* Line Height */
+	--lh-sm: 1.25;
+	--lh-mid: 1.5;
+	--lh-big: 1.75;
+
+	/* Letter Spacing */
+	--ls-sm: 1.5px;
+	--ls-mid: 3px;
+	--ls-big: 4.7px;
+	/* MARGIN & PADDING */
+	--m-sm: 2rem;
+	--p-big: 1rem 0;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* GLOBAL */
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: var(--primary-font-family);
+	color: var(--primary-color);
+}
+
+a:link {
+	text-decoration: none !important;
+}
+
+a:visited {
+	color: inherit;
+}
+
+/* BUTTONS */
+.btn {
+	background-color: white;
+	margin-top: 2.5rem;
+	border: 1px solid var(--primary-color);
+	padding: 15px 20px;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	background-image: linear-gradient(
+		to bottom left,
+		transparent 50%,
+		var(--highlight-color) 50%
+	);
+	border: 1px solid var(--highlight-color);
+	color: var(--primary-color);
+	background-size: 200% 200%;
+	background-position: bottom left;
+	transition: background-position 0.5s;
+}
+
+.btn-menu-container {
+	margin-top: 10%;
+	margin-left: 50%;
+}
+
+.btn-menu {
+	cursor: pointer;
+}
+
+/* SWIPER STYLE */
+
+.swiper-pagination-bullet-active {
+	background-color: var(--highlight-color) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: var(--highlight-color) !important;
+}
+
+body {
+	overflow: overlay;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--highlight-color);
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+/* UTILITIES */
+.font-secondary {
+	font-family: var(--secondary-font-family);
+}
