@@ -25,6 +25,7 @@
 					class="gallery-img"
 					src="../assets/thumbnail_image001.jpg"
 					loading="lazy"
+					alt="Intérieur accueillant du restaurant Canari"
 			/></swiper-slide>
 			<swiper-slide>
 				<video
@@ -46,12 +47,14 @@
 					class="gallery-img"
 					src="../assets/thumbnail_image003.jpg"
 					loading="lazy"
+					alt="Elegant dining au restaurant Canari"
 			/></swiper-slide>
 			<swiper-slide
 				><img
 					class="gallery-img"
 					src="../assets/thumbnail_image004.jpg"
 					loading="lazy"
+					alt="Peinture trouvée à l'intérieur du restaurant Canari"
 			/></swiper-slide>
 
 			...
