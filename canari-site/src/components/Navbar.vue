@@ -20,8 +20,9 @@
 						class="dropdown-content"
 						@mouseenter="showDropdown"
 						@mouseleave="hideDropdown"
-						v-show="isDropdownVisible"
+						v-show="DropdownVisible"
 					>
+						<!-- on v-show: correct is isDropdownVisible, reactivate when the dropdown is working -->
 						<a @click="triggerModal" href="#menu-section">MENU COMPLET</a>
 					</div>
 				</div>
