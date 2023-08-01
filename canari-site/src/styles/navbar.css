@@ -25,7 +25,8 @@
 	color: var(--default-color);
 }
 
-.nav-container a {
+.nav-container a,
+.nav-container a:visited {
 	color: var(--default-color);
 }
 
@@ -45,6 +46,11 @@
 	transition: all 0.5s;
 }
 
+.nav-container.scrolled a,
+.nav-container.scrolled a:visited {
+	color: var(--primary-color-light);
+}
+
 .nav-container.scrolled .nav:hover {
 	color: var(--primary-color);
 }
@@ -56,6 +62,10 @@
 	font-weight: 700;
 }
 
+.logo:hover {
+	color: var(--primary-color);
+}
+
 .dropbtn {
 	background-color: transparent;
 	color: var(--default-color);
@@ -65,6 +75,7 @@
 /* HAMBURGER MENU */
 .hamburger-menu-container {
 	display: none;
+	padding: 1rem;
 	margin-right: 3rem;
 }
 
@@ -130,11 +141,6 @@
 	color: var(--highlight-color);
 }
 
-/* UTILITIES */
-.scrolled a {
-	color: var(--primary-color) !important;
-}
-
 /* RESPONSIVENESS */
 
 .nav-mobile {
@@ -159,6 +165,11 @@
 	text-align: start;
 	transition: 0.2s;
 	margin-top: 3rem;
+	color: var(--primary-color);
+}
+
+.mobile-element:visited {
+	color: var(--primary-color);
 }
 
 .mobile-element:hover {
