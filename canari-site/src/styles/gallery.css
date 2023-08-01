@@ -23,7 +23,6 @@
 @media only screen and (max-width: 950px) {
 	.gallery-img {
 		padding-right: 8%;
-		height: 50vh;
 		width: 100%;
 		object-fit: cover;
 	}
